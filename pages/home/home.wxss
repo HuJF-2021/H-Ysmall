@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.popular image{
+  width: 100%;
+}
+.recommends{
+  display: flex;
+  text-align: center;
+}
+.recommends-item{
+  flex: 1;
+ 
+}
+.recommends-item image{
+  width: 130rpx;
+  height: 130rpx;
+}

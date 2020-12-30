@@ -1,0 +1,45 @@
+/* compoents/w-good-item.wxss */
+.deso-info{
+    font-size: 12px;
+    position: absolute; 
+    text-align: center;
+    overflow: hidden;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+.goods-item image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.titele {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4rpx;
+}
+.info .price{
+  color: #ff6767;
+  margin-right: 30rpx;
+}
+.info .icon{
+  width: 30rpx;
+  height: 30rpx;
+  top: 5rpx;
+  padding: 0 6rpx 0 20rpx;
+  position: relative;
+}
+
+/* wxss不能引用本地图片 */
+/* .info .collection{
+  position: relative;
+} */
+/* .info .collection::before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  background:url("/assets/img/common/collect.svg") 0 0/18px 18px;
+} */

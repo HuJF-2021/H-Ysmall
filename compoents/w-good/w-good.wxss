@@ -1,0 +1,14 @@
+/* compoents/w-good/w-good.wxss */
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10rpx;
+}
+.good-item{
+  
+  width: 48%;
+  position: relative;
+  padding-bottom: 64rpx;
+  margin-top: 20rpx;
+}

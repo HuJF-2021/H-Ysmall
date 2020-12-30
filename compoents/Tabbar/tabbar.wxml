@@ -1,0 +1,7 @@
+<!--compoents/Tabbar/tabbar.wxml-->
+<view class="tabbar">
+  <block wx:for="{{title}}" wx:key="{{index}}">
+    <view class="tabbar-item {{ counter==index ? 'active':''}}" bindtap="counter"
+    data-index="{{index}}"><text>{{item}}</text></view>
+  </block>
+</view>

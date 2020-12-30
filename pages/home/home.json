@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "w-swiper":"../../compoents/w-swiper/swiper",
+    "w-tabbar":"../../compoents/Tabbar/tabbar",
+    "w-good":"../../compoents/w-good/w-good",
+    "w-back-top":"../../compoents/w-back-top/w-back-top"
+  },
+  "navigationBarTitleText": "蘑菇街购物街"
+}
