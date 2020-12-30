@@ -1,0 +1,13 @@
+/* compoents/recommend/recommend.wxss */
+.recommends{
+  display: flex;
+  text-align: center;
+}
+.recommends-item{
+  flex: 1;
+ 
+}
+.recommends-item image{
+  width: 130rpx;
+  height: 130rpx;
+}

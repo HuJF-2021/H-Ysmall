@@ -1,10 +1,8 @@
 // pages/home/home.js
-
 import {getHomeGoods,} from "../../network/home"
 const types=['new','pop','sell']
 const BACK=1500
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -18,7 +16,9 @@ Page({
      'sell':{page:0,list:[]},
    },
    currenttype:'new',
-   isShow:false
+   isShow:false,
+   isfixed:false,
+   tabscrolltop:''
    
   },
 
@@ -43,7 +43,6 @@ Page({
        bannes:banne,
        recommends:recommend
       })
-    
       }
     })
   },
@@ -75,26 +74,34 @@ Page({
   onPageScroll(option){
    const scrolltop=option.scrollTop
    const flag=scrolltop>=BACK
+   const flag2=scrolltop>=this.data.tabscrolltop
+   if(flag2 !=this.data.isfixed){
+     this.setData({
+       isfixed:flag2
+     })
+   }
 
    if(flag !=this.data.isShow){
     this.setData({
       isShow:scrolltop>BACK
     })
    }
-   
-   
-   
   },
   //事件相关方法
   counter(event){
    const index=event.detail.index
-    
     const type=types[index]
-    
-    
     this.setData({
       currenttype:type
     })
+  },
+  bindloadimage(){
+   wx.createSelectorQuery().select('#tabbar').boundingClientRect(rect=>{
+    // console.log(rect);
+    this.data.tabscrolltop=rect.top
+    
+   }).exec()
+    
   }
  
 })

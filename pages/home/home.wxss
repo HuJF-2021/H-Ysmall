@@ -2,15 +2,12 @@
 .popular image{
   width: 100%;
 }
-.recommends{
-  display: flex;
-  text-align: center;
-}
-.recommends-item{
-  flex: 1;
- 
-}
-.recommends-item image{
-  width: 130rpx;
-  height: 130rpx;
+
+.tabbar-fiexd{
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
 }
