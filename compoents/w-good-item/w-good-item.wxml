@@ -1,11 +1,11 @@
 <!--compoents/w-good-item.wxml-->
-<view class="goods-item">
+<view class="goods-item" bindtap="detailclick">
      <image src="{{list.show.img}}" mode="widthFix"></image>
      <view class="deso-info">
           <view class="titele">{{list.title}}</view>
           <view class="info">
                <text class="price">￥{{list.price}}</text>
-               <image src="../../assets/img/common/collect.svg" class="icon"></image>
+               <image src="../../assets/img/common/collect.svg" class="icon" ></image>
                <text class="collection">{{list.cfav}}</text>
           </view>
           </view>

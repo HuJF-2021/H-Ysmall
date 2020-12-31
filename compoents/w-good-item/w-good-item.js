@@ -21,6 +21,17 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    detailclick(){
+      wx.navigateTo({
+        url: '/pages/detail/detail',
+        success: (result) => {},
+        fail: (res) => {
+          console.log(res);
+          
+        },
+        complete: (res) => {},
+      })
+      
+    }
   }
 })
