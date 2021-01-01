@@ -1,20 +1,17 @@
-// compoents/w-swiper/swiper.js
+// pages/detail/Childen/w-shopinfo/w-shopinfo.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    list:{
-      type:Array,
-      value:[]
-    }
+
   },
-  externalClasses:['hightclass'],
+
   /**
    * 组件的初始数据
    */
   data: {
-   
+
   },
 
   /**

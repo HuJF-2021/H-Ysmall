@@ -1,10 +1,14 @@
 // pages/detail/detail.js
+import {getdetail,Goodsinfo,Shopinfo} from "../../network/detail"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    topimage:[],
+    goods:{},
+    shops:{}
 
   },
 
@@ -12,7 +16,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
+    getdetail(options.id).then(res=>{
+      console.log(res);
+       //1.获取详情页轮播图的数据
+       const data=res.result
+       this.setData({
+        topimage:data.itemInfo.topImages,
+        goods:new Goodsinfo(data.itemInfo,data.columns,data.shopInfo.services),
+        shops:new Shopinfo(data.shopInfo)
+       })
+       
+      
+    })
+    
   },
 
   /**

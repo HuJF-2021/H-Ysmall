@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-swiper":"../../compoents/w-swiper/swiper",
+    "w-baseinfo":"../detail/Childen/w-baseinfo/w-baseinfo"
+  }
 }

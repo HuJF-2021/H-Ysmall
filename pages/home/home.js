@@ -1,5 +1,5 @@
 // pages/home/home.js
-import {getHomeGoods,} from "../../network/home"
+import {getHomeGoods} from "../../network/home"
 const types=['new','pop','sell']
 const BACK=1500
 Page({

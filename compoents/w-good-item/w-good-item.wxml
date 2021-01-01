@@ -1,5 +1,5 @@
 <!--compoents/w-good-item.wxml-->
-<view class="goods-item" bindtap="detailclick">
+<view class="goods-item" bindtap="detailclick" data-iid="{{list.iid}}">
      <image src="{{list.show.img}}" mode="widthFix"></image>
      <view class="deso-info">
           <view class="titele">{{list.title}}</view>

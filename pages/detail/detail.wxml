@@ -1,2 +1,3 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<w-swiper list="{{topimage}}" hightclass="hightclass"></w-swiper>
+<w-baseinfo goods="{{goods}}"></w-baseinfo>
