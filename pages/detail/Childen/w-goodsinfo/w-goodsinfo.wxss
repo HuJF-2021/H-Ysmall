@@ -1,0 +1,45 @@
+/* pages/detail/Childen/w-goodsinfo/w-goodsinfo.wxss */
+.start{
+  position: absolute;
+  left: 10rpx;
+  width: 30%;
+  height: 6rpx;
+  background-color: 	#C0C0C0;
+
+}
+.center{
+  font-size: 30rpx;
+  padding-left: 14rpx;
+  padding-right: 16rpx;
+  padding-top: 30rpx;
+  
+
+}
+
+.end{
+
+  position: absolute;
+  right: 10rpx;
+  width: 30%;
+  height: 6rpx;
+  background-color: 	#C0C0C0;
+  margin-top: 8px;
+}
+.info-desc .start::before, .info-desc .end::after{
+  content: '';
+  position: absolute;
+  width: 8rpx;
+  height: 8rpx;
+  background-color: 	#696969;
+  bottom: 0;
+  text-align: center;
+}
+.info-keys{
+  margin-top: 30rpx;
+  padding-left: 30rpx;}
+  
+.info-img image{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 18rpx;
+}

@@ -1,2 +1,30 @@
 <!--pages/detail/Childen/w-shopinfo/w-shopinfo.wxml-->
-<text>pages/detail/Childen/w-shopinfo/w-shopinfo.wxml</text>
+<view class="shop-info">
+ <view class="shop-top">
+  <image src="{{shops.logo}}"></image>
+  <text class="shop-title">{{shops.name}}</text>
+ </view>
+ <view  class="shop-middle">
+   <view class="shop-middle-item shop-middle-left">
+     <view class="shop-sell">
+       <view class="shop-sell-count">{{shops.sells}}</view>
+       <view class="shop-sell-text">总销量</view>
+     </view>
+     <view class="shop-good">
+      <view class="goods-count">{{shops.goodcount}}</view>
+          <view class="goods-count-text">全部宝贝</view>
+     </view>
+   </view>
+   <view class="shop-middle-item shop-middle-right">
+       <view class="shop-others" wx:for="{{shops.score}}">
+         <view class="shops-others-item  item-name">{{item.name}}</view>
+         <view class="shops-others-item {{item.isBetter ?'item-score':'score'}}" >{{item.score}}</view>
+         <view class="shops-others-item {{item.isBetter ?'item-score':'score'}}">{{item.isBetter ? '高':'低'}}</view>
+       </view>
+   </view>
+
+ </view>
+ <view class="entershop">
+   <button bindtap="entershop" size="mini">进店逛逛</button>
+ </view>
+</view>

@@ -1,6 +1,9 @@
 {
   "usingComponents": {
     "w-swiper":"../../compoents/w-swiper/swiper",
-    "w-baseinfo":"../detail/Childen/w-baseinfo/w-baseinfo"
+    "w-baseinfo":"../detail/Childen/w-baseinfo/w-baseinfo",
+    "w-shopinfo":"../detail/Childen/w-shopinfo/w-shopinfo",
+    "w-goodsinfo":"../detail/Childen/w-goodsinfo/w-goodsinfo",
+    "w-goodspram":"../detail/Childen/w-goodspram/w-goodspram"
   }
 }

@@ -1,0 +1,13 @@
+<!--pages/detail/Childen/w-goodspram/w-goodspram.wxml-->
+<view class="title">
+ <text>-----宝贝详情-----</text>
+</view>
+<view class="info-size">
+ <block wx:for="{{goodspram.sizes}}" wx:for-item="table" wx:for-index="indea" wx:key="{{indea}}">
+  <view class="info-size-tr"> 
+  <block wx:for="{{table}}" wx:for-item="td" wx:for-index="indec" wx:key="{{indec}}">
+    <view class="info-size-td">{{td}}</view>
+  </block>
+  </view>
+ </block>
+</view>

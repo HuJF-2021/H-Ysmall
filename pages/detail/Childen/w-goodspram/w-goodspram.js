@@ -1,10 +1,10 @@
-// pages/detail/Childen/w-shopinfo/w-shopinfo.js
+// pages/detail/Childen/w-goodspram/w-goodspram.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    shops:{
+    goodspram:{
       type:Object,
       value:{}
     }

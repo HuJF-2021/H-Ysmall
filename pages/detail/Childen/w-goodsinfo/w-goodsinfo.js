@@ -1,13 +1,13 @@
-// pages/detail/Childen/w-shopinfo/w-shopinfo.js
+// pages/detail/Childen/w-goodsinfo/w-goodsinfo.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    shops:{
-      type:Object,
-      value:{}
-    }
+     goodsinfo:{
+       type:Object,
+       value:{}
+     }
   },
 
   /**

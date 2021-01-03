@@ -1,0 +1,12 @@
+<!--pages/detail/Childen/w-goodsinfo/w-goodsinfo.wxml-->
+<view class="info-desc clear-fix">
+<view class="start"></view>
+<view class="center">{{goodsinfo.desc}}</view>
+<view class="end"></view>
+</view>
+<view class="info-keys">
+<text>{{goodsinfo.detailImage[0].key}}</text>
+</view>
+<view class="info-img" wx:for="{{goodsinfo.detailImage[0].list}}" wx:key="{{index}}">
+  <image src="{{item}}" mode="widthFix"></image>
+</view>

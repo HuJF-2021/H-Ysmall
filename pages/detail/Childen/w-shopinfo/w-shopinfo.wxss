@@ -1,1 +1,75 @@
 /* pages/detail/Childen/w-shopinfo/w-shopinfo.wxss */
+.shop-info{
+  border-radius: 30rpx;
+}
+.shop-top{
+  display: flex;
+  
+}
+
+.shop-top image{
+ border-radius: 20rpx;
+ width: 160rpx;
+ height: 160rpx;
+ margin-top:40rpx;
+ margin-left: 30rpx;
+}
+.shop-title{
+ font-size: 30rpx;
+ margin-left: 30rpx;
+ padding-top: 120rpx ;
+}
+.shop-middle{
+  display: flex;
+}
+.shop-middle-item{
+  flex: 1;
+}
+.shop-middle-left{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  border-right: solid 1px rgb(134, 128, 128);
+  /*padding-top: 10px;*/
+}
+.shop-sell{
+  margin-top: 60rpx;
+}
+.shop-good{
+  margin-top: 60rpx;
+}
+.goods-count-text{
+  padding-top: 16rpx;
+  font-size: 28rpx;
+}
+.shop-sell-text{
+  font-size: 28rpx;
+  padding-top: 16rpx;
+}
+.shop-others{
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+.shops-others-item{
+ flex: 1;
+ font-size: 28rpx;
+ text-align: center;
+ margin-bottom: 10rpx;
+}
+.score{
+  color: 		#32CD32;
+}
+.item-score{
+  color: 	#DC143C;
+}
+.entershop{
+  margin-top: 30rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.entershop button{
+  border-radius: 10rpx;
+}

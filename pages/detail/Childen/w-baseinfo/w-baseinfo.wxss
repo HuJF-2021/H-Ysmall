@@ -1,12 +1,12 @@
 /* pages/detail/Childen/w-baseinfo/w-baseinfo.wxss */
 .info-title{
-  font-size: 15px;
+  font-size: 30rpx;
    margin-top: 20rpx;
    margin-left: 8rpx;
  }
  .info-price{
-   margin-top: 8px;
-   margin-left: 20px;
+   margin-top: 16rpx;
+   margin-left: 40rpx;
  }
  .n-price{
    font-size: 32rpx;
@@ -16,20 +16,20 @@
      font-size: 26rpx;
      color: #666666;
      text-decoration: line-through;
-     margin-left: 10px;
+     margin-left: 20rpx;
  
    }
    .info-discount{
-     margin-left: 24px;
+     margin-left: 48rpx;
      /*background-color: #ff5777;*/
-     font-size: 16px;
-     color: var(--color-hight-text);
+     font-size: 32rpx;
+     color: #ff6767;
    }
  .info-other{
-   font-size: 12px;
+   font-size: 24rpx;
    display: flex;
-   margin-top: 10px;
-   margin-left: 5px;
+   margin-top: 20rpx;
+   margin-left: 10rpx;
    color: #666666;
  
  }
@@ -37,14 +37,14 @@
      flex: 1;
      text-align: center;
      justify-content: space-around;
-     padding-right: 5px;
+     padding-right: 10rpx;
  
    }
    .info-service{
-     margin-top: 10px;
-     font-size: 12px;
+     margin-top: 20rpx;
+     font-size: 24rpx;
      display: flex;
-     line-height: 80px;
+     line-height: 160rpx;
      height: 80px;
      border-top: solid 1px darkgray;
      border-bottom: solid 3px darkgray;
@@ -54,7 +54,7 @@
      /*padding-top: 8px;*/
      text-align: center;
      flex: 1;
-     padding-bottom: 8px;
+     padding-bottom: 16rpx;
  
    }
    .info-service-item image{

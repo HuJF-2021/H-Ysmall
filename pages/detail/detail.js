@@ -1,5 +1,5 @@
 // pages/detail/detail.js
-import {getdetail,Goodsinfo,Shopinfo} from "../../network/detail"
+import {getdetail,Goodsinfo,Shopinfo,GoodsParam} from "../../network/detail"
 Page({
 
   /**
@@ -8,7 +8,9 @@ Page({
   data: {
     topimage:[],
     goods:{},
-    shops:{}
+    shops:{},
+    goodsinfo:{},
+    goodspram:{}
 
   },
 
@@ -16,7 +18,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
+    // console.log(options);
     getdetail(options.id).then(res=>{
       console.log(res);
        //1.获取详情页轮播图的数据
@@ -24,7 +26,9 @@ Page({
        this.setData({
         topimage:data.itemInfo.topImages,
         goods:new Goodsinfo(data.itemInfo,data.columns,data.shopInfo.services),
-        shops:new Shopinfo(data.shopInfo)
+        shops:new Shopinfo(data.shopInfo),
+        goodsinfo:data.detailInfo,
+        goodspram:new GoodsParam(data.itemParams.info,data.itemParams.rule)
        })
        
       

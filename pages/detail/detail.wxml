@@ -1,3 +1,6 @@
 <!--pages/detail/detail.wxml-->
 <w-swiper list="{{topimage}}" hightclass="hightclass"></w-swiper>
 <w-baseinfo goods="{{goods}}"></w-baseinfo>
+<w-shopinfo shops="{{shops}}" class="shops"></w-shopinfo>
+<w-goodsinfo goodsinfo="{{goodsinfo}}"/>
+<w-goodspram goodspram="{{goodspram}}"/>
